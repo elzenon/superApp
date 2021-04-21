@@ -1,0 +1,28 @@
+* {
+	box-sizing: border-box;
+}
+.products {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.product-card {
+	display: flex;
+	/*border: 1px solid silver;*/
+	flex: 25%;
+	padding: 16px;
+}
+.product-card div{
+	box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+	padding: 10px;
+}
+@media (max-width: 800px) {
+	.product-card {
+		flex: 50%;
+	}
+}
+@media (max-width: 500px) {
+	.product-card {
+		flex: 100%;
+	}
+}
